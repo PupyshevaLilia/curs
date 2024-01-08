@@ -1,84 +1,87 @@
-Symfony Demo Application
-========================
-
-The "Symfony Demo Application" is a reference application created to show how
-to develop applications following the [Symfony Best Practices][1].
-
-You can also learn about these practices in [the official Symfony Book][5].
-
-Requirements
+Требования
 ------------
 
-  * PHP 8.2.0 or higher;
-  * PDO-SQLite PHP extension enabled;
-  * and the [usual Symfony application requirements][2].
+  * PHP 8.2.0 или выше;
+  * включенное PHP-расширение PDO-SQLite;
+  * и [обычные требования к приложениям Symfony][2].
 
-Installation
+Установка
 ------------
 
-There are 3 different ways of installing this project depending on your needs:
+Существует 3 варианта установки проекта в зависимости от ваших потребностей:
 
-**Option 1.** [Download Symfony CLI][4] and use the `symfony` binary installed
-on your computer to run this command:
+**Вариант 1.** [Скачайте Symfony CLI][4] и используйте бинарник `symfony`, установленный
+на вашем компьютере для выполнения этой команды:
 
-```bash
+``bash
 $ symfony new --demo my_project
 ```
 
-**Option 2.** [Download Composer][6] and use the `composer` binary installed
-on your computer to run these commands:
+**Вариант 2.** [Скачайте Composer][6] и используйте бинарник `composer`, установленный
+на вашем компьютере для выполнения этих команд:
 
-```bash
-# you can create a new project based on the Symfony Demo project...
+``bash
+# вы можете создать новый проект на основе проекта Symfony Demo...
 $ composer create-project symfony/symfony-demo my_project
 
-# ...or you can clone the code repository and install its dependencies
+# ...или вы можете клонировать репозиторий кода и установить его зависимости
 $ git clone https://github.com/symfony/demo.git my_project
 $ cd my_project/
 $ composer install
 ```
 
-**Option 3.** Click the following button to deploy this project on Platform.sh,
-the official Symfony PaaS, so you can try it without installing anything locally:
+**Опция 3.** Нажмите на следующую кнопку, чтобы развернуть этот проект на Platform.sh,
+официальном Symfony PaaS, чтобы вы могли попробовать его, не устанавливая ничего локально:
 
 <p align="center">
 <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/symfonycorp/platformsh-symfony-template-metadata/main/symfony-demo.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform"><img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" /></a>
 </p>
 
-Usage
+
+Использование
 -----
 
-There's no need to configure anything before running the application. There are
-2 different ways of running this application depending on your needs:
 
-**Option 1.** [Download Symfony CLI][4] and run this command:
 
-```bash
+
+Перед запуском приложения не нужно ничего настраивать. Существует
+2 варианта запуска этого приложения в зависимости от ваших потребностей:
+
+
+**Вариант 1.** [Скачайте Symfony CLI][4] и выполните эту команду:
+
+
+``bash
 $ cd my_project/
 $ symfony serve
 ```
 
-Then access the application in your browser at the given URL (<https://localhost:8000> by default).
 
-**Option 2.** Use a web server like Nginx or Apache to run the application
-(read the documentation about [configuring a web server for Symfony][3]).
+Затем откройте приложение в браузере по указанному URL (<https://localhost:8000> по умолчанию).
 
-On your local machine, you can run this command to use the built-in PHP web server:
 
-```bash
+**Вариант 2.** Используйте веб-сервер, например Nginx или Apache, для запуска приложения
+(прочитайте документацию о [настройке веб-сервера для Symfony][3]).
+
+
+На вашей локальной машине вы можете выполнить эту команду, чтобы использовать встроенный веб-сервер PHP:
+
+``bash
 $ cd my_project/
 $ php -S localhost:8000 -t public/
 ```
 
-Tests
+
+Тесты
 -----
 
-Execute this command to run tests:
+Выполните эту команду для запуска тестов:
 
-```bash
+``bash
 $ cd my_project/
 $ ./bin/phpunit
 ```
+
 
 [1]: https://symfony.com/doc/current/best_practices.html
 [2]: https://symfony.com/doc/current/setup.html#technical-requirements
